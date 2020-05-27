@@ -36,3 +36,31 @@
     transform: rotate(360deg);
   }
 }
+
+img.slide {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  max-height: 100vh;
+}
+
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: black	;
+}
+
+.carousel-indicators .active{
+  background-color: white;
+}
+
+.carousel-indicators {
+  position: absolute;
+  right: 46%;
+}
+
+.carousel-caption {
+  position: absolute;
+  right: 60%;
+}
