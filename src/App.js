@@ -1,11 +1,26 @@
 import React from 'react';
 import './App.css';
 import Home from './components/home'
+import Sidebar from './components/sidebar'
+
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
 
 function App() {
   return (
     <React.Fragment>
-      <Home /> 
+      <Container fluid>
+        <Row>         
+          <Col className="col-10 px-0 align-items-start">
+            <Home /> 
+          </Col> 
+
+          <Col className="col-2 px-0 bg-light">
+            <Sidebar />
+          </Col>
+        </Row>
+      </Container> 
     </React.Fragment>
   );
 }
