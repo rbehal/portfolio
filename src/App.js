@@ -15,8 +15,7 @@ function App() {
           <Col className="col-10 px-0 align-items-start">
             <Home /> 
           </Col> 
-
-          <Col className="col-2 px-0 bg-dark">
+          <Col className="col-2 offset-10 px-0 position-fixed">
             <Sidebar />
           </Col>
         </Row>

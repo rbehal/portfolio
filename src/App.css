@@ -39,6 +39,7 @@ img.slide {
   width: 10px;
   height: 10px;
   border-radius: 100%;
+  padding:2px;
   background-color: black	;
 }
 
@@ -64,12 +65,14 @@ img.slide {
   font-size: calc(10px + 5vmin);
   white-space: nowrap;
   margin: auto;
+  font-family: Times, "Times New Roman", serif
 }
 
 .intro {
   font-size: calc(10px + 3vmin);
   margin: auto;
   white-space: nowrap;
+  font-family: Times, "Times New Roman", serif
 }
 
 .view {
@@ -79,4 +82,45 @@ img.slide {
 }
 
 .sidebar {
+  height: 100vh;
+  width: 100%;
+  background-color: grey; 
 }
+
+.headshot {
+  position:relative;
+  height: 75%;
+  width: 75%;
+  top: 20px;
+} 
+
+.sidebar ul {
+  list-style-type: none; 
+  padding: 0px;
+  text-align: center;
+}
+
+.sidebar ul li p {
+  margin: 20% 0%;
+}
+
+.sidebar ul li a {
+  color: black;
+}
+
+.sidebar ul li {
+  font-size: calc(10px + 1vmin);
+}
+
+.icons{
+  display: block;
+  margin: 20% 0%;
+}
+
+.sidebarName {
+  margin-top: 30px;
+  margin-bottom: -25px;
+  font-size: calc(10px + 2vmin);
+  font-family: Times, "Times New Roman", serif
+}
+
