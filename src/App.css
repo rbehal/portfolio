@@ -54,6 +54,7 @@ img.slide {
 .carousel-caption {
   position: absolute;
   font-family: 'Darker Grotesque', sans-serif;
+  left: 0%; 
   right: 60%;
   top: 20%;
 }

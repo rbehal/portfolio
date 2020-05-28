@@ -16,7 +16,7 @@ function App() {
             <Home /> 
           </Col> 
 
-          <Col className="col-2 px-0 bg-light">
+          <Col className="col-2 px-0 bg-dark">
             <Sidebar />
           </Col>
         </Row>
