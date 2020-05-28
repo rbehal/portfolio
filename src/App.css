@@ -62,5 +62,22 @@ img.slide {
 
 .carousel-caption {
   position: absolute;
+  font-family: 'Darker Grotesque', sans-serif;
   right: 60%;
+  top: 20%;
+}
+
+.name {
+  font-size: 300%;
+  white-space: nowrap;
+}
+
+.home {
+  font-size: 300%;
+  /* white-space: nowrap; */
+}
+
+.button2 {
+  /* position: relative; */
+  /* top: 200px; */
 }
