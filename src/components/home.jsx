@@ -17,54 +17,48 @@ import img3 from '../assets/Home/AgnicoEagle.jpg'
 export default class home extends Component {
     render() {
         return (
-            // <Container fluid>
-            //     <Row>
-            //         <Col className="col-10 offset-2 px-0 align-items-start">
-                        <Carousel controls={true} touch={false}>
-                            <Carousel.Item>
-                                <Image className="slide" src={img1} fluid />
+            <Carousel controls={true} touch={false}>
+                <Carousel.Item>
+                    <Image className="slide" src={img1} fluid />
 
-                                <Carousel.Caption>
-                                    <h2><i>Hi I'm</i></h2>
-                                    <h1 className="name">Rahul Behal</h1>
-                                    
-                                    <Button className="view" variant="light" href="https://1drv.ms/b/s!Aoz-Vqsx3JMGgcth1GGAzvtPqqmUew" target="_blank">
-                                        View CV&nbsp;&nbsp;
-                                        <i class="fas fa-download"></i>
-                                    </Button>
-                                </Carousel.Caption>
-                            </Carousel.Item>
+                    <Carousel.Caption>
+                        <h2><i>Hi I'm</i></h2>
+                        <h1 className="name">Rahul Behal</h1>
+                        
+                        <Button className="view" variant="light" href="https://1drv.ms/b/s!Aoz-Vqsx3JMGgcth1GGAzvtPqqmUew" target="_blank">
+                            View CV&nbsp;&nbsp;
+                            <i class="fas fa-download"></i>
+                        </Button>
+                    </Carousel.Caption>
+                </Carousel.Item>
 
-                            <Carousel.Item>
-                                <Image className="slide" src={img2} fluid />
-                                 
-                                <Carousel.Caption>
-                                    <h1 className="projectIntro">
-                                        Checkout what I've worked on!&nbsp;&nbsp;     
-                                    </h1>
+                <Carousel.Item>
+                    <Image className="slide" src={img2} fluid />
+                        
+                    <Carousel.Caption>
+                        <h1 className="projectIntro">
+                            Checkout what I've worked on!&nbsp;&nbsp;     
+                        </h1>
 
-                                    <Button className="view" variant="light" href="https://www.google.ca/">
-                                        View Projects&nbsp;&nbsp;
-                                        <i class="fas fa-database"></i>
-                                    </Button>
-                                </Carousel.Caption>
-                            </Carousel.Item>
+                        <Button className="view" variant="light" href="https://www.google.ca/">
+                            View Projects&nbsp;&nbsp;
+                            <i class="fas fa-database"></i>
+                        </Button>
+                    </Carousel.Caption>
+                </Carousel.Item>
 
-                            <Carousel.Item>
-                                <Image className="slide" src={img3} fluid />
+                <Carousel.Item>
+                    <Image className="slide" src={img3} fluid />
 
-                                <Carousel.Caption>
-                                    <h1 className="jobIntro">I'm always looking for exciting opportunities!&nbsp;&nbsp;</h1>
-                                    <Button className="view" variant="light" href="https://www.google.ca/">
-                                        View Work Experience&nbsp;&nbsp;
-                                        <i class="fas fa-briefcase"></i>
-                                    </Button>
-                                </Carousel.Caption>
-                            </Carousel.Item>
-                        </Carousel>
-            //         </Col>
-            //     </Row>
-            // </Container>
+                    <Carousel.Caption>
+                        <h1 className="jobIntro">I'm always looking for exciting opportunities!&nbsp;&nbsp;</h1>
+                        <Button className="view" variant="light" href="https://www.google.ca/">
+                            View Work Experience&nbsp;&nbsp;
+                            <i class="fas fa-briefcase"></i>
+                        </Button>
+                    </Carousel.Caption>
+                </Carousel.Item>
+            </Carousel>
         )
     }
 }
