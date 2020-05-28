@@ -48,7 +48,8 @@ img.slide {
 
 .carousel-indicators {
   position: absolute;
-  right: 46%;
+  left: 0%;
+  right: 60%;
 }
 
 .carousel-caption {
@@ -60,18 +61,14 @@ img.slide {
 }
 
 .name {
-  font-size: 300%;
+  /* font-size: 300%; */
+  font-size: calc(10px + 5vmin);
   white-space: nowrap;
   margin: auto;
 }
 
-.projectIntro {
-  font-size: 300%;
-  margin: auto;
-}
-
-.jobIntro {
-  font-size: 200%;
+.intro {
+  font-size: calc(10px + 3vmin);
   margin: auto;
 }
 
