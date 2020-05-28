@@ -61,7 +61,6 @@ img.slide {
 }
 
 .name {
-  /* font-size: 300%; */
   font-size: calc(10px + 5vmin);
   white-space: nowrap;
   margin: auto;
@@ -70,6 +69,7 @@ img.slide {
 .intro {
   font-size: calc(10px + 3vmin);
   margin: auto;
+  white-space: nowrap;
 }
 
 .view {

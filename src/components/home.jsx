@@ -51,7 +51,7 @@ export default class home extends Component {
                     <Image className="slide" src={img3} fluid />
 
                     <Carousel.Caption>
-                        <h1 className="intro">I'm always looking for exciting opportunities!&nbsp;&nbsp;</h1>
+                        <h1 className="intro">I'm always seeking exciting opportunities!&nbsp;&nbsp;</h1>
                         <Button className="view" variant="light" href="https://www.google.ca/">
                             View Work Experience&nbsp;&nbsp;
                             <i class="fas fa-briefcase"></i>
