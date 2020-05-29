@@ -19,7 +19,7 @@ export default class sidebar extends Component {
                     </li>
                     
                     <li>
-                        <h1 className="sidebarName">Rahul Behal</h1>
+                        <h1 className="sidebar-name">Rahul Behal</h1>
                     </li>
 
                     <li>

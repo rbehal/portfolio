@@ -3,6 +3,7 @@ import './App.css';
 import Home from './components/home'
 import Sidebar from './components/sidebar'
 import About from './components/about'
+import Skills from './components/skills'
 
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
@@ -24,6 +25,7 @@ function App() {
           <Row>
             <Col className="col-10 px-0">
               <About />
+              <Skills />
             </Col>
           </Row>
         </div>
