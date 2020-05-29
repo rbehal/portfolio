@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: #222930; 
 }
 
 .App-logo {
@@ -61,18 +62,18 @@ img.slide {
   top: 20%;
 }
 
-.name {
+.slideName {
   font-size: calc(10px + 5vmin);
   white-space: nowrap;
   margin: auto;
-  font-family: Times, "Times New Roman", serif
+  font-family: "Dancing Script";
 }
 
 .intro {
   font-size: calc(10px + 3vmin);
   margin: auto;
   white-space: nowrap;
-  font-family: Times, "Times New Roman", serif
+  font-family: 'Darker Grotesque';
 }
 
 .view {
@@ -84,7 +85,7 @@ img.slide {
 .sidebar {
   height: 100vh;
   width: 100%;
-  background-color: grey; 
+  background-color: lightgrey; 
 }
 
 .headshot {
@@ -118,9 +119,53 @@ img.slide {
 }
 
 .sidebarName {
+  text-align: center;
+  color: black;
   margin-top: 30px;
   margin-bottom: -25px;
   font-size: calc(10px + 2vmin);
   font-family: Times, "Times New Roman", serif
 }
 
+.general {
+  text-align: center; 
+  background-color: #222930; 
+}
+
+.general p {
+  font-family: 'Darker Grotesque';
+  text-align: left; 
+  font-size: calc(10px + 1vmin);
+  color: #E9E9E9;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+.general h1 {
+  font-family: 'Dancing Script';
+  text-align: left; 
+  color: #E9E9E9;
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-bottom: 3%;
+  margin-top: 3%;
+
+}
+
+#abilities ul > li { min-height: 30px; padding: 3px 0px; }
+#abilities ul > li:hover { background: #F2F2F2; }
+#abilities ul > li .ability-title { display: inline-block; width: 60%; }
+#abilities ul > li .ability-score { float: right; }
+#abilities ul > li .ability-score .glyphicon { 
+	color: #DFE0E0; 
+  font-size: 14px; 
+  color: #4EB1BA;
+  color: #E9E9E9;
+  color: #222930;
+	 
+	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+#abilities ul > li .ability-score .glyphicon.filled { color: #22A39F; }

@@ -27,7 +27,6 @@ export default class sidebar extends Component {
                     </li>
 
                     <li>Introduction</li>
-                    <li>Education</li>
                     <li>Skills</li>
                     <li>Projects</li>
                     <li>Work Experience</li>

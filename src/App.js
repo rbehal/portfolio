@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Home from './components/home'
 import Sidebar from './components/sidebar'
+import About from './components/about'
 
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
@@ -19,8 +20,16 @@ function App() {
             <Sidebar />
           </Col>
         </Row>
+        <div className="general">
+          <Row>
+            <Col className="col-10 px-0">
+              <About />
+            </Col>
+          </Row>
+        </div>
       </Container> 
     </React.Fragment>
+    
   );
 }
 

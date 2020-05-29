@@ -19,7 +19,7 @@ export default class home extends Component {
 
                     <Carousel.Caption>
                         <h2><i>Hi I'm</i></h2>
-                        <h1 className="name">Rahul Behal</h1>
+                        <h1 className="slideName">Rahul Behal</h1>
                         
                         <Button className="view" variant="light" href="https://1drv.ms/b/s!Aoz-Vqsx3JMGgcth1GGAzvtPqqmUew" target="_blank">
                             View CV&nbsp;&nbsp;
