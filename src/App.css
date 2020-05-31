@@ -56,36 +56,38 @@ img.slide {
 
 .carousel-caption {
   position: absolute;
-  font-family: 'Darker Grotesque', sans-serif;
+  font-family: "Source Sans Pro";
   left: 0%; 
   right: 60%;
   top: 20%;
 }
 
 .slide-name {
-  font-size: calc(10px + 5vmin);
+  font-size: 4vmin;
   white-space: nowrap;
   margin: auto;
-  font-family: "Dancing Script";
+  font-family: "Libre Baskerville";
 }
 
 .intro {
-  font-size: calc(10px + 3vmin);
+  font-size: 4vmin;
   margin: auto;
   white-space: nowrap;
-  font-family: 'Darker Grotesque';
+  font-family: "Source Sans Pro";
 }
 
 .view {
   position: relative; 
   margin: auto; 
   top: 20px;
+  color: black;
 }
 
 .sidebar {
   height: 100vh;
   width: 100%;
   background-color: lightgrey; 
+  z-index: 999;
 }
 
 .headshot {
@@ -110,7 +112,7 @@ img.slide {
 }
 
 .sidebar ul li {
-  font-size: calc(10px + 1vmin);
+  font-size: 2vmin;
 }
 
 .icons{
@@ -123,39 +125,93 @@ img.slide {
   color: black;
   margin-top: 30px;
   margin-bottom: -25px;
-  font-size: calc(10px + 2vmin);
-  font-family: Times, "Times New Roman", serif
+  font-size: 3vmin;
+  font-family: 'Libre Baskerville';
 }
 
 .general {
   text-align: center; 
   background-color: #222930; 
-  font-family: 'Darker Grotesque';
+  font-family: "Source Sans Pro";
   color: #E9E9E9;
+  font-size: 1.5vmin;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .general p {
   text-align: left; 
-  font-size: calc(10px + 1vmin);
-  margin-right: 10%;
-  margin-left: 10%;
+  font-size: calc(1vmin);
+  font-family: "Source Sans Pro";
 }
 
 .general h1 {
-  font-family: 'Dancing Script';
+  font-family: 'Libre Baskerville';
   text-align: left; 
   color: #E9E9E9;
-  margin-right: 10%;
-  margin-left: 10%;
-  margin-bottom: 3%;
-  margin-top: 3%;
+  margin-bottom: 10vmin;
+  margin-top: 10vmin;
+}
 
+#about-header {
+  margin-top: 5%;
+}
+
+.about p {
+  font-size: 1.618vmin;
 }
 
 .skills {
-  margin-bottom: 3%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   text-align: left;
 }
 
+.skills-heading {
+  display: block;
+  font-weight: bold;
+  font-size: 2vmin;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+#personal-skills {
+  margin-top: 0%;
+}
+
+.projects {
+  color: black;
+  font-size: 2vmin;
+}
+
+.projects p {
+  color: darkslategray;
+  font-size: 1.5vmin;
+  text-align: justify;
+}
+
+.projects h2 {
+  color: darkslategray;
+  font-weight: bold;
+  font-size: 1.8vmin;
+  text-shadow: 0;
+  padding: 0;
+  border: 0;
+}
+
+.project-card {
+  /* height: 50vmin; */
+}
+
+#view-link {
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  margin-bottom: 0%;
+  margin-top: 0%;
+  padding: 0px; 
+}
+
+.preview {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.32), 0 3px 6px rgba(0,0,0,100);
+  align-self: center;
+}

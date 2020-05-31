@@ -4,6 +4,8 @@ import Home from './components/home'
 import Sidebar from './components/sidebar'
 import About from './components/about'
 import Skills from './components/skills'
+import Projects from './components/projects'
+import Work from './components/work'
 
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
@@ -12,7 +14,7 @@ import Col from 'react-bootstrap/Col'
 function App() {
   return (
     <React.Fragment>
-      <Container fluid>
+      <Container fluid>  
         <Row>         
           <Col className="col-10 px-0 align-items-start">
             <Home /> 
@@ -26,12 +28,13 @@ function App() {
             <Col className="col-10 px-0">
               <About />
               <Skills />
+              <Projects /> 
+              <Work />
             </Col>
           </Row>
         </div>
       </Container> 
     </React.Fragment>
-    
   );
 }
 

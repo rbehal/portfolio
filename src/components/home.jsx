@@ -10,51 +10,54 @@ import img2 from '../assets/Home/ConnUHacks.jpg'
 import img3 from '../assets/Home/AgnicoEagle.jpg'
 
 
+
 export default class home extends Component {
     render() {
         return (
-            <Carousel controls={false} touch={false}>
-                <Carousel.Item>
-                    <Image className="slide" src={img1} fluid />
+            <div id="home">
+                <Carousel controls={false} touch={false}>
+                    <Carousel.Item>
+                        <Image className="slide" src={img1} fluid />
 
-                    <Carousel.Caption>
-                        <h2><i>Hi I'm</i></h2>
-                        <h1 className="slide-name">Rahul Behal</h1>
-                        
-                        <Button className="view" variant="light" href="https://1drv.ms/b/s!Aoz-Vqsx3JMGgcth1GGAzvtPqqmUew" target="_blank">
-                            View CV&nbsp;&nbsp;
-                            <i class="fas fa-download"></i>
-                        </Button>
-                    </Carousel.Caption>
-                </Carousel.Item>
+                        <Carousel.Caption>
+                            <h2><i>Hi I'm</i></h2>
+                            <h1 className="slide-name">Rahul Behal</h1>
+                            
+                            <Button className="view" variant="light" href="https://1drv.ms/b/s!Aoz-Vqsx3JMGgcth1GGAzvtPqqmUew" target="_blank">
+                                View CV&nbsp;&nbsp;
+                                <i class="fas fa-download"></i>
+                            </Button>
+                        </Carousel.Caption>
+                    </Carousel.Item>
 
-                <Carousel.Item>
-                    <Image className="slide" src={img2} fluid />
-                        
-                    <Carousel.Caption>
-                        <h1 className="intro">
-                            Checkout what I've worked on!&nbsp;&nbsp;     
-                        </h1>
+                    <Carousel.Item>
+                        <Image className="slide" src={img2} fluid />
+                            
+                        <Carousel.Caption>
+                            <h1 className="intro">
+                                Checkout what I've worked on!&nbsp;&nbsp;     
+                            </h1>
 
-                        <Button className="view" variant="light" href="https://www.google.ca/">
-                            View Projects&nbsp;&nbsp;
-                            <i class="fas fa-database"></i>
-                        </Button>
-                    </Carousel.Caption>
-                </Carousel.Item>
+                            <Button className="view" variant="light" href="#projects">
+                                View Projects&nbsp;&nbsp;
+                                <i class="fas fa-database"></i>
+                            </Button>
+                        </Carousel.Caption>
+                    </Carousel.Item>
 
-                <Carousel.Item>
-                    <Image className="slide" src={img3} fluid />
+                    <Carousel.Item>
+                        <Image className="slide" src={img3} fluid />
 
-                    <Carousel.Caption>
-                        <h1 className="intro">I'm always seeking exciting opportunities!&nbsp;&nbsp;</h1>
-                        <Button className="view" variant="light" href="https://www.google.ca/">
-                            View Work Experience&nbsp;&nbsp;
-                            <i class="fas fa-briefcase"></i>
-                        </Button>
-                    </Carousel.Caption>
-                </Carousel.Item>
-            </Carousel>
+                        <Carousel.Caption>
+                            <h1 className="intro">I'm always seeking exciting opportunities!&nbsp;&nbsp;</h1>
+                            <Button className="view" variant="light" href="#work">
+                                View Work Experience&nbsp;&nbsp;
+                                <i class="fas fa-briefcase"></i>
+                            </Button>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                </Carousel>
+            </div>
         )
     }
 }

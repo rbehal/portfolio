@@ -1,9 +1,7 @@
 import React, { Component } from 'react'
 import '../App.css';
 
-import {Nav} from "react-bootstrap";
 import Image from 'react-bootstrap/Image'
-
 import img1 from '../assets/Sidebar/headshot.png'
 
 
@@ -26,10 +24,11 @@ export default class sidebar extends Component {
                         <p><i class="fas fa-envelope"></i>&nbsp;RahulBehal01@hotmail.com</p>
                     </li>
 
-                    <li>Introduction</li>
-                    <li>Skills</li>
-                    <li>Projects</li>
-                    <li>Work Experience</li>
+                    <li><a href="#home">Introduction</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#skills">Skills</a> </li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#work">Work Experience</a></li>
                     <li>Contact</li>
 
                     <div className="icons"> 
