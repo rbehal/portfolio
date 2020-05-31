@@ -6,6 +6,7 @@ import About from './components/about'
 import Skills from './components/skills'
 import Projects from './components/projects'
 import Work from './components/work'
+import Contact from './components/contact'
 
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
@@ -30,6 +31,7 @@ function App() {
               <Skills />
               <Projects /> 
               <Work />
+              <Contact />
             </Col>
           </Row>
         </div>

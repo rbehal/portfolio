@@ -70,7 +70,7 @@ export default class projects extends Component {
                         <Card.Title><h2>nb.AI</h2></Card.Title>
                         <Card.Text>
                           <p>
-                            A logistic regression machiune learning model developed to predict the Most Valuable Player for various NBA seasons. 
+                            A logistic regression machine learning model developed to predict the Most Valuable Player for various NBA seasons. 
                           </p>
                         </Card.Text>
                       </Card.Body>
