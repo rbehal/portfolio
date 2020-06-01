@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
 import '../App.css';
 
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+
 
 
 export default class contact extends Component {
@@ -16,15 +19,18 @@ export default class contact extends Component {
     const { status } = this.state;
 
     return (
-        <div className="contact">
+        <div id="contact">
             <h1>I'd love to chat!</h1>
-
-            <form onSubmit={this.submitForm} action="https://formspree.io/xvowapeg" method="POST">
-                <input className="form-control input-sm" type="email" name="email" placeholder="Your email" />
-                <input id="comment" className="form-control" rows="5" type="text" name="message" placeholder="Message" />
-                {status === "SUCCESS" ? <p>Thanks!</p> : <button>Submit</button>}
-                {status === "ERROR" && <p>Ooops! There was an error.</p>}
-            </form>
+            <Container>
+                <form onSubmit={this.submitForm} action="https://formspree.io/xvowapeg" method="POST">
+                    <Row><input id="email-box" className="form-control input-sm" type="email" name="email" placeholder="Your Email" /></Row>
+                    <Row><textarea id="message-box" className="form-control" type="text" name="message" placeholder="Your Message" /></Row>
+                    <Row>
+                        {status === "SUCCESS" ? <p className="submit-text">Thanks, I will get back to you as soon as possible!</p> : <button className="submit-button">Submit</button>}
+                        {status === "ERROR" && <p className="submit-text">Unfortunately, there was an error. Please try again.</p>}
+                    </Row>
+                </form>
+            </Container>
         </div>
     );
   }

@@ -4,6 +4,7 @@ import '../App.css';
 import Image from 'react-bootstrap/Image'
 import img1 from '../assets/Sidebar/headshot.png'
 
+import ScrollspyNav from "react-scrollspy-nav";
 
 
 export default class sidebar extends Component {
@@ -24,12 +25,25 @@ export default class sidebar extends Component {
                         <p><i class="fas fa-envelope"></i>&nbsp;RahulBehal01@hotmail.com</p>
                     </li>
 
-                    <li><a href="#home">Introduction</a></li>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#skills">Skills</a> </li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#work">Work Experience</a></li>
-                    <li>Contact</li>
+                    {/* <ScrollspyNav
+                        scrollTargetIds={["home", "about", "skills", "projects", "work", "contact"]}
+                        offset={0}
+                        activeNavClass="is-active"
+                        scrollDuration="1000"
+                        headerBackground="true"
+                    > */}
+                        <div className="quick-links">
+                            <ul>
+                            <li><a href="#home">Introduction</a></li>
+                            <li><a href="#about">About Me</a></li>
+                            <li><a href="#skills">Skills</a> </li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#work">Work Experience</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            </ul>
+                        </div>
+                    {/* </ScrollspyNav> */}
+            
 
                     <div className="icons"> 
                         <li><a href="https://www.linkedin.com/in/rbehal01/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin fa-2x"></i></a></li>

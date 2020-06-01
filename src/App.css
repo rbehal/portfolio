@@ -94,7 +94,8 @@ img.slide {
   position:relative;
   height: 75%;
   width: 75%;
-  top: 20px;
+  /* margin-top: 30%; */
+  margin-top: 6vmin;
 } 
 
 .sidebar ul {
@@ -104,7 +105,7 @@ img.slide {
 }
 
 .sidebar ul li p {
-  margin: 20% 0%;
+  margin-top: 1vmin;
 }
 
 .sidebar ul li a {
@@ -115,18 +116,33 @@ img.slide {
   font-size: 2vmin;
 }
 
+.quick-links {
+  margin-top: 8vmin;
+  margin-bottom: 8vmin;
+}
+
+.quick-links li a {
+  color: black;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
 .icons{
   display: block;
-  margin: 20% 0%;
+  margin-top: 15vmin;
 }
 
 .sidebar-name {
   text-align: center;
   color: black;
-  margin-top: 30px;
-  margin-bottom: -25px;
+  margin-top: 3vmin;
+  margin-bottom: 1vmin;
   font-size: 3vmin;
   font-family: 'Libre Baskerville';
+}
+
+.sidebar.quick-links li.active a {
+  color: #2c98f0;
 }
 
 .general {
@@ -147,6 +163,7 @@ img.slide {
 .general h1 {
   font-family: 'Libre Baskerville';
   text-align: left; 
+  font-size: 5vmin;
   color: #E9E9E9;
   margin-bottom: 10vmin;
   margin-top: 10vmin;
@@ -255,4 +272,45 @@ img.slide {
   margin-left: 10%;
   margin-right: 10%;
   text-align: justify;
+}
+
+#message-box {
+  width: 50%;
+  height: 15vmin;
+  margin: auto;
+  margin-top: 1%;
+}
+
+#email-box {
+  width: 50%;
+  margin: auto;
+}
+
+.submit-button {
+  margin:auto;
+  margin-top:1%;
+  margin-bottom: 10%;
+  display: block;
+  width: 50%;
+  background: #fff;
+  border-radius: 4px;
+  padding: 5px 10px;
+  border: none;
+  color: black;
+  font-weight: 700;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: .5s ease all;
+}
+
+.submit-text {
+  margin: auto;
+  margin-top:3%;
+  margin-bottom: 10%;
+  font-weight: bold;
+  font-size: 2vmin;
+}
+
+.is-active {
+  font-weight: bold;
+  text-decoration: underline;
 }
