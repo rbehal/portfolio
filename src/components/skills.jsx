@@ -37,9 +37,9 @@ export default class skills extends Component {
             const { id, skill1, numStars1, skill2, numStars2 } = skill 
             return (
                 <tr key={id}>
-                    <td className="skills-label">{skill1}</td>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <td>{skill1}</td>&nbsp;&nbsp;&nbsp;&nbsp;
                     <td style={{paddingRight: "5vmin", fontSize: "1.5vmin"}}>{this.stars(numStars1)}</td>
-                    <td style={{paddingLeft: "5vmin"}} className="skills-label">{skill2}</td>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <td style={{paddingLeft: "5vmin"}}>{skill2}</td>&nbsp;&nbsp;&nbsp;&nbsp;
                     <td style={{fontSize: "1.5vmin"}}>{this.stars(numStars2)}</td>
                 </tr>
             )

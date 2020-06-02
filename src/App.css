@@ -94,7 +94,6 @@ img.slide {
   position:relative;
   height: 75%;
   width: 75%;
-  /* margin-top: 30%; */
   margin-top: 6vmin;
 } 
 
@@ -150,7 +149,7 @@ img.slide {
   background-color: #222930; 
   font-family: "Source Sans Pro";
   color: #E9E9E9;
-  font-size: 1.5vmin;
+  font-size: 2vmin;
   margin-left: 10%;
   margin-right: 13%;
 }
@@ -173,23 +172,14 @@ img.slide {
   margin-top: 5%;
 }
 
-.about p {
-  font-size: 2vmin;
-}
-
 .skills {
   margin: auto;
   text-align: left;
 }
 
-.skills-label {
-  font-size: 2vmin;
-}
-
 .skills-heading {
   display: block;
   font-weight: bold;
-  font-size: 2vmin;
   margin-top: 10%;
   margin-bottom: 10%;
 }
@@ -200,19 +190,18 @@ img.slide {
 
 .projects {
   color: black;
-  font-size: 2vmin;
 }
 
 .projects p {
   color: darkslategray;
-  font-size: 1.5vmin;
+  font-size: 1.75vmin;
   text-align: justify;
 }
 
 .projects h2 {
   color: darkslategray;
   font-weight: bold;
-  font-size: 1.8vmin;
+  font-size: 2.2vmin;
   text-shadow: 0;
   padding: 0;
   border: 0;
@@ -252,7 +241,7 @@ img.slide {
 
 #work-title {
   text-align: center;
-  font-size: 2vmin;
+  font-size: 2.4vmin;
   font-weight: bold;
   font-family: "Source Sans Pro";
   margin-top: 1vmin;
@@ -260,15 +249,15 @@ img.slide {
 }
 
 .work-position {
-  font-size: 1.8vmin;
+  font-size: 2.2vmin;
 }
 
 .work-subheading {
-  font-size: 1.8vmin;
+  font-size: 2.2vmin;
 }
 
 #work-description {
-  margin-top: 10%;
+  margin-top: 7%;
   margin-left: 10%;
   margin-right: 10%;
   text-align: justify;
@@ -307,7 +296,6 @@ img.slide {
   margin-top:3%;
   margin-bottom: 10%;
   font-weight: bold;
-  font-size: 2vmin;
 }
 
 .is-active {
