@@ -4,7 +4,7 @@ import '../App.css';
 import Image from 'react-bootstrap/Image'
 import img1 from '../assets/Sidebar/headshot.png'
 
-import ScrollspyNav from "react-scrollspy-nav";
+// import ScrollspyNav from "react-scrollspy-nav";
 
 
 export default class sidebar extends Component {
