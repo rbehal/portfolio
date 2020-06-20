@@ -22,7 +22,7 @@ export default class sidebar extends Component {
                     </li>
 
                     <li>
-                        <p><i class="fas fa-envelope"></i>&nbsp;RahulBehal01@hotmail.com</p>
+                        <p><i className="fas fa-envelope"></i>&nbsp;RahulBehal01@hotmail.com</p>
                     </li>
 
                     {/* <ScrollspyNav
@@ -46,8 +46,8 @@ export default class sidebar extends Component {
             
 
                     <div className="icons"> 
-                        <li><a href="https://www.linkedin.com/in/rbehal01/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin fa-2x"></i></a></li>
-                        <li><a href="https://github.com/rbehal/" target="_blank" rel="noopener noreferrer"><i class="fab fa-github fa-2x"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/rbehal01/" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin fa-2x"></i></a></li>
+                        <li><a href="https://github.com/rbehal/" target="_blank" rel="noopener noreferrer"><i className="fab fa-github fa-2x"></i></a></li>
                     </div>
                 </ul>
             </div>

@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-color: #222930; 
+  background-color: #483d3f; 
 }
 
 .App-logo {
@@ -86,7 +86,7 @@ img.slide {
 .sidebar {
   height: 100vh;
   width: 100%;
-  background-color: lightgrey; 
+  background-color: #D2BBA0; 
   z-index: 999;
 }
 
@@ -146,12 +146,15 @@ img.slide {
 
 .general {
   text-align: center; 
-  background-color: #222930; 
+  background-color: #483d3f; 
   font-family: "Source Sans Pro";
   color: #E9E9E9;
   font-size: 2vmin;
-  margin-left: 10%;
-  margin-right: 13%;
+}
+
+.main {
+  padding-left: 15%;
+  padding-right: 15%;
 }
 
 .general p {
@@ -173,7 +176,7 @@ img.slide {
 }
 
 .skills {
-  margin: auto;
+  width: 100%;
   text-align: left;
 }
 
@@ -193,13 +196,13 @@ img.slide {
 }
 
 .projects p {
-  color: darkslategray;
+  color: black;
   font-size: 1.75vmin;
-  text-align: justify;
+  text-align: center;
 }
 
 .projects h2 {
-  color: darkslategray;
+  color: black;
   font-weight: bold;
   font-size: 2.2vmin;
   text-shadow: 0;
@@ -258,29 +261,24 @@ img.slide {
 
 #work-description {
   margin-top: 7%;
-  margin-left: 10%;
-  margin-right: 10%;
   text-align: justify;
 }
 
 #message-box {
-  width: 50%;
   height: 15vmin;
   margin: auto;
   margin-top: 1%;
 }
 
 #email-box {
-  width: 50%;
   margin: auto;
 }
 
 .submit-button {
-  margin:auto;
   margin-top:1%;
   margin-bottom: 10%;
   display: block;
-  width: 50%;
+  width: 100%;
   background: #fff;
   border-radius: 4px;
   padding: 5px 10px;

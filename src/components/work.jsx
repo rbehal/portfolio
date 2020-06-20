@@ -19,10 +19,10 @@ export default class work extends Component {
                 <h1>Work Experience</h1>  
                 <Container fluid>
                     <Row id="work-experience" className="row align-items-center">
-                        <Col className="col-4 px-0">
+                        <Col className="col-3 px-0">
                             <Image className="work-logo" src={img3} /> 
                         </Col>
-                        <Col className="col-8 px-0">
+                        <Col className="col-9 pl-5">
                             <h1 id="work-title">Neat</h1>
                             <h2 className="work-position">Full Stack Developer Intern</h2>
                         <h3 className="work-subheading">Montreal, Quebec &nbsp;&nbsp;&nbsp;&nbsp; <i>Current Position</i></h3>
@@ -35,10 +35,10 @@ export default class work extends Component {
                         </Col>
                     </Row> 
                     <Row id="work-experience" className="row align-items-center">
-                        <Col className="col-4 px-0">
+                        <Col className="col-3 px-0">
                             <Image className="work-logo" src={img2} /> 
                         </Col>
-                        <Col className="col-8 px-0">
+                        <Col className="col-9 pl-5">
                             <h1 id="work-title">Siemens</h1>
                             <h2 className="work-position">Chemical Engineering Intern</h2>
                             <h3 className="work-subheading">Toronto, Ontario &nbsp;&nbsp;&nbsp;&nbsp; May 2019 - Sep. 2019</h3>
@@ -51,10 +51,10 @@ export default class work extends Component {
                         </Col>
                     </Row> 
                     <Row id="work-experience" className="row align-items-center">
-                        <Col className="col-4 px-0">
+                        <Col className="col-3 px-0">
                             <Image className="work-logo" src={img1} /> 
                         </Col>
-                        <Col className="col-8 px-0">
+                        <Col className="col-9 pl-5">
                             <h1 id="work-title">Agnico Eagle Mines</h1>
                             <h2 className="work-position">Process Plant Engineering Intern</h2>
                             <h3 className="work-subheading">Rankin Inlet, Nunavut &nbsp;&nbsp;&nbsp;&nbsp; Jan. 2019 - May 2019</h3>
