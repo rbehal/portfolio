@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e5469e1df2886b58105f63e1adf39ea0",
+    "revision": "40e6b9b73e1f713252412a1024523ee4",
     "url": "/index.html"
   },
   {
-    "revision": "b38cc6024bf13c7fe80e",
-    "url": "/static/css/main.891377a3.chunk.css"
+    "revision": "3b91ea2cbef4903bd369",
+    "url": "/static/css/main.8d1e8d8c.chunk.css"
   },
   {
     "revision": "58005f1022c9ac678c4d",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.f57080e1.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b38cc6024bf13c7fe80e",
-    "url": "/static/js/main.3c552e10.chunk.js"
+    "revision": "3b91ea2cbef4903bd369",
+    "url": "/static/js/main.c33022cc.chunk.js"
   },
   {
     "revision": "b4ba650b238755144e2a",
@@ -38,10 +38,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "2dc8e5f71f85eccd501b32c446ccdefe",
     "url": "/static/media/ConnUHacks.2dc8e5f7.jpg"
-  },
-  {
-    "revision": "03bd963ea237766c62dee900912c58b5",
-    "url": "/static/media/Neat.03bd963e.png"
   },
   {
     "revision": "529c6187a5fd317f5d032f3448af7fa8",
