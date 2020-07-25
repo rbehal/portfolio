@@ -15,12 +15,12 @@ import Col from 'react-bootstrap/Col'
 function App() {
   return (
     <React.Fragment>
-      <Container fluid>  
-        <Row>         
+      <Container fluid>
+        <Row>
           <Col className="col-sm-12 col-md-10 px-0 align-items-start">
-            <Home /> 
-          </Col> 
-          <Col className="col-2 offset-10 px-0 position-fixed d-none d-sm-block">
+            <Home />
+          </Col>
+          <Col className="col-2 offset-10 px-0 position-fixed">
             <Sidebar />
           </Col>
         </Row>
@@ -29,13 +29,13 @@ function App() {
             <Col className="col-sm-12 col-md-10 main">
               <About />
               <Skills />
-              <Projects /> 
+              <Projects />
               <Work />
               <Contact />
             </Col>
           </Row>
         </div>
-      </Container> 
+      </Container>
     </React.Fragment>
   );
 }
