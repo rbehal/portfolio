@@ -28,17 +28,33 @@ export default class skills extends Component {
                 { id: 2, skill1: "Time Management", numStars1: 5, skill2: "Teamwork", numStars2: 5 },
                 { id: 3, skill1: "Critical Thinking", numStars1: 5, skill2: "Leadership", numStars2: 5 },
                 { id: 4, skill1: "French", numStars1: 3, skill2: "Spanish", numStars2: 2 },
-            ]
+            ],
+            isMobile: false
         }
+        this.update = this.update.bind(this);
+    }
+    componentDidMount() {
+        this.update();
+        window.addEventListener("resize", this.update);
+    }
+    componentWillUnmount() {
+        window.removeEventListener("resize", this.update)
+    }
+    update() {
+        this.setState({ isMobile: window.innerWidth < 1200 })
     }
 
     renderTableData(skills) {
+        const isMobile = this.state.isMobile;
+
         return skills.map((skill) => {
             const { id, skill1, numStars1, skill2, numStars2 } = skill
             return (
                 <tr key={id}>
+                    {isMobile && <td><i className="fa fa-circle d-xl-none"></i></td>}
                     <td>{skill1}</td>
                     <td className="d-none d-xl-block text-nowrap" style={{ paddingRight: "5vmin", fontSize: "1.5vmin" }}>{this.stars(numStars1)}</td>
+                    {isMobile && <td><i style={{ marginRight: "3vmin" }} className="fa fa-circle d-xl-none"></i></td>}
                     <td style={{ paddingLeft: "5vmin" }}>{skill2}</td>
                     <td className="d-none d-xl-block text-nowrap" style={{ fontSize: "1.5vmin" }}>{this.stars(numStars2)}</td>
                 </tr>
