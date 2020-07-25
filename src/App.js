@@ -17,7 +17,7 @@ function App() {
     <React.Fragment>
       <Container fluid>
         <Row>
-          <Col className="col-sm-12 col-md-10 px-0 align-items-start">
+          <Col className="col-md-12 col-lg-10 px-0 align-items-start">
             <Home />
           </Col>
           <Col className="col-2 offset-10 px-0 position-fixed">
@@ -26,7 +26,7 @@ function App() {
         </Row>
         <div className="general">
           <Row>
-            <Col className="col-sm-12 col-md-10 main">
+            <Col className="col-md-12 col-lg-10 main">
               <About />
               <Skills />
               <Projects />
