@@ -12,6 +12,10 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 
+import ReactGA from 'react-ga';
+ReactGA.initialize('UA-173611398-1');
+ReactGA.pageview(window.location.pathname + window.location.search);
+
 function App() {
   return (
     <React.Fragment>
