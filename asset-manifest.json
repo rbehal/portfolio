@@ -1,33 +1,31 @@
 {
   "files": {
-    "main.css": "/static/css/main.8d1e8d8c.chunk.css",
-    "main.js": "/static/js/main.c33022cc.chunk.js",
-    "main.js.map": "/static/js/main.c33022cc.chunk.js.map",
+    "main.css": "/static/css/main.c0a49cff.chunk.css",
+    "main.js": "/static/js/main.8b7874e6.chunk.js",
+    "main.js.map": "/static/js/main.8b7874e6.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.e5fc83a6.js",
     "runtime-main.js.map": "/static/js/runtime-main.e5fc83a6.js.map",
-    "static/js/2.f57080e1.chunk.js": "/static/js/2.f57080e1.chunk.js",
-    "static/js/2.f57080e1.chunk.js.map": "/static/js/2.f57080e1.chunk.js.map",
+    "static/js/2.d0f7b5b3.chunk.js": "/static/js/2.d0f7b5b3.chunk.js",
+    "static/js/2.d0f7b5b3.chunk.js.map": "/static/js/2.d0f7b5b3.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.0bf5c08ed12b7949d7dbef788a75403f.js": "/precache-manifest.0bf5c08ed12b7949d7dbef788a75403f.js",
+    "precache-manifest.048e957978792a2e66ba78a2883d448a.js": "/precache-manifest.048e957978792a2e66ba78a2883d448a.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.8d1e8d8c.chunk.css.map": "/static/css/main.8d1e8d8c.chunk.css.map",
-    "static/js/2.f57080e1.chunk.js.LICENSE.txt": "/static/js/2.f57080e1.chunk.js.LICENSE.txt",
+    "static/css/main.c0a49cff.chunk.css.map": "/static/css/main.c0a49cff.chunk.css.map",
+    "static/js/2.d0f7b5b3.chunk.js.LICENSE.txt": "/static/js/2.d0f7b5b3.chunk.js.LICENSE.txt",
     "static/media/Agnico.png": "/static/media/Agnico.a85342fa.png",
     "static/media/AgnicoEagle.jpg": "/static/media/AgnicoEagle.0d9df79e.jpg",
     "static/media/CQI3.jpg": "/static/media/CQI3.30784898.jpg",
     "static/media/ConnUHacks.jpg": "/static/media/ConnUHacks.2dc8e5f7.jpg",
     "static/media/amazingBrick.gif": "/static/media/amazingBrick.529c6187.gif",
     "static/media/headshot.png": "/static/media/headshot.5ce3c295.png",
-    "static/media/nbAI.gif": "/static/media/nbAI.fdc0ea9a.gif",
+    "static/media/jobSearch.gif": "/static/media/jobSearch.ca2172ca.gif",
     "static/media/optionsStrategies.gif": "/static/media/optionsStrategies.451d7430.gif",
-    "static/media/primeAID.gif": "/static/media/primeAID.84aae2f5.gif",
-    "static/media/tetrisAI.gif": "/static/media/tetrisAI.ca6a3525.gif",
-    "static/media/tickerPicker.gif": "/static/media/tickerPicker.78207005.gif"
+    "static/media/primeAID.gif": "/static/media/primeAID.65e79d2e.gif"
   },
   "entrypoints": [
     "static/js/runtime-main.e5fc83a6.js",
-    "static/js/2.f57080e1.chunk.js",
-    "static/css/main.8d1e8d8c.chunk.css",
-    "static/js/main.c33022cc.chunk.js"
+    "static/js/2.d0f7b5b3.chunk.js",
+    "static/css/main.c0a49cff.chunk.css",
+    "static/js/main.8b7874e6.chunk.js"
   ]
 }
