@@ -25,7 +25,7 @@ export default class work extends Component {
                         <Col className="col-md-9 col-sm-8 pl-5">
                             <h1 id="work-title">Neat</h1>
                             <h2 className="work-position">Full Stack Developer Intern</h2>
-                            <h3 className="work-subheading">Montreal, Quebec &nbsp;&nbsp;&nbsp;&nbsp; <i>Current Position</i></h3>
+                            <h3 className="work-subheading">Montreal, Quebec &nbsp;&nbsp;&nbsp;&nbsp; Jun. 2020 - Aug. 2020</h3>
 
                             <p id="work-description">
                                 Neat aims to accelerate innovation in organizations and accelerate the training process through a software solution that reduces redundancies and streamlines
