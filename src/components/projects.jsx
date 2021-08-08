@@ -10,7 +10,7 @@ import primeAIDGif from '../assets/Projects/primeAID.gif'
 import jobSearchGif from '../assets/Projects/jobSearch.gif'
 import amazingBrickGif from '../assets/Projects/amazingBrick.gif'
 import optionsGif from '../assets/Projects/optionsStrategies.gif'
-
+import tickerPickerGif from '../assets/Projects/tickerPicker.gif'
 
 
 export default class projects extends Component {
@@ -85,7 +85,7 @@ export default class projects extends Component {
               </Card>
 
               <Card bg="light" className="card">
-                <Card.Img className="preview" variant="top" src="https://s7.gifyu.com/images/tickerPicker.gif" />
+                <Card.Img className="preview" variant="top" src={tickerPickerGif} />
                 <Card.Body>
                   <Card.Title><h2>Ticker Picker</h2></Card.Title>
                   <Card.Text>
