@@ -9,8 +9,9 @@ export default class about extends Component {
             <div className="about" id="about">
                 <h1 id="about-header">About Me</h1>
                 <p>
-                    I am currently in my fourth year as a student at McGill University, pursuing a bachelor’s degree in Chemical Engineering with a minor in Software Engineering. 
-                    I am also heavily interested in global capital markets, investment banking, and finance. 
+                    I am a professional Software Engineer with a couple of years of industry experience in engineering including some time spent in big tech. 
+                    I love solving incredibly hard challenges at scale while learning cutting edge technologies and tools. 
+                    I am also interested in global capital markets, banking, and finance.
                     <br></br><br></br>
                     I aspire to develop and build on my foundation through any possible learning opportunities related to these passions. 
                 </p> 
