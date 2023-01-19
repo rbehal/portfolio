@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9a9e8a340bbb9eb77cf39ca6388813a8",
+    "revision": "a4742466a37bea524e500a16aff703c1",
     "url": "/index.html"
   },
   {
-    "revision": "df07418b461db5ba7ac8",
+    "revision": "4f3b967bc13642ce89fb",
     "url": "/static/css/main.c0a49cff.chunk.css"
   },
   {
-    "revision": "7423ecfd4fff4c495580",
-    "url": "/static/js/2.778222d5.chunk.js"
+    "revision": "025b34bf0ee0abd0a4de",
+    "url": "/static/js/2.4e0a5b18.chunk.js"
   },
   {
     "revision": "5ac48c47bb3912b14c2d8de4f56d5ae8",
-    "url": "/static/js/2.778222d5.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.4e0a5b18.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "df07418b461db5ba7ac8",
-    "url": "/static/js/main.597162bf.chunk.js"
+    "revision": "4f3b967bc13642ce89fb",
+    "url": "/static/js/main.c10c9120.chunk.js"
   },
   {
     "revision": "b4ba650b238755144e2a",
@@ -32,12 +32,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/AgnicoEagle.0d9df79e.jpg"
   },
   {
+    "revision": "b38e3c49b6c0694cc7e07c86955136eb",
+    "url": "/static/media/Amazon.b38e3c49.png"
+  },
+  {
     "revision": "3078489809989f42218e86b24d4210d2",
     "url": "/static/media/CQI3.30784898.jpg"
   },
   {
     "revision": "2dc8e5f71f85eccd501b32c446ccdefe",
     "url": "/static/media/ConnUHacks.2dc8e5f7.jpg"
+  },
+  {
+    "revision": "19d36db6ba4829307e23d7ecc9760f23",
+    "url": "/static/media/Scotiabank.19d36db6.png"
   },
   {
     "revision": "529c6187a5fd317f5d032f3448af7fa8",
