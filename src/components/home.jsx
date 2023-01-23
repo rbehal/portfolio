@@ -23,7 +23,7 @@ export default class home extends Component {
                             <h2><i>Hi I'm</i></h2>
                             <h1 className="slide-name">Rahul Behal</h1>
                             
-                            <Button className="view" variant="light" href="https://1drv.ms/b/s!Aoz-Vqsx3JMGi6NQQqiYHHulevFjBg?e=ASeg9r" target="_blank">
+                            <Button className="view" variant="light" href="https://1drv.ms/b/s!Aoz-Vqsx3JMGi6NQQqiYHHulevFjBg?e=D4xRvx" target="_blank">
                                 View CV&nbsp;&nbsp;
                                 <i className="fas fa-download"></i>
                             </Button>

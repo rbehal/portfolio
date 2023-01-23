@@ -25,7 +25,7 @@ export default class work extends Component {
                         <Col className="col-md-9 col-sm-8 pl-5">
                             <h1 id="work-title">Amazon</h1>
                             <h2 className="work-position">Software Development Engineer</h2>
-                            <h3 className="work-subheading">Vancouver, British Columbia &nbsp;&nbsp;&nbsp;&nbsp; Aug. 2022 - Jan. 2023</h3>
+                            <h3 className="work-subheading">Vancouver, British Columbia &nbsp;&nbsp;&nbsp;&nbsp; Aug. 2022 - Present</h3>
 
                             <p id="work-description">
                                 At Amazon, I worked within the Selling Partner Experience (SPX) organization to deliver products designed to maximize seller efficiency and minimize frustration.
