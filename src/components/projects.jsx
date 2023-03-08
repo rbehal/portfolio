@@ -16,7 +16,7 @@ import tickerPickerGif from '../assets/Projects/tickerPicker.gif'
 export default class projects extends Component {
   render() {
     return (
-      <div className="projects" id="projects">
+      <section className="projects" id="projects">
         <h1>Projects</h1>
         <Container fluid>
           <Row>
@@ -114,7 +114,7 @@ export default class projects extends Component {
             </div>
           </Row>
         </Container>
-      </div>
+      </section>
     )
   }
 }

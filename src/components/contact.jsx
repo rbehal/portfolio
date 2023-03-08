@@ -19,7 +19,7 @@ export default class contact extends Component {
     const { status } = this.state;
 
     return (
-        <div id="contact">
+        <section id="contact">
             <h1>I'd love to chat!</h1>
             <Container>
                 <form onSubmit={this.submitForm} action="https://formspree.io/xvowapeg" method="POST">
@@ -31,7 +31,7 @@ export default class contact extends Component {
                     </Row>
                 </form>
             </Container>
-        </div>
+        </section>
     );
   }
 

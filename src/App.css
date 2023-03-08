@@ -95,6 +95,10 @@ img.slide {
   margin-bottom: 10%;
 }
 
+.quick-links li a.active {
+  font-weight: bold;
+}
+
 .icons{
   display: block;
   margin-top: 15vmin;

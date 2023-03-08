@@ -15,7 +15,7 @@ import amazonLogo from '../assets/Work/Amazon.png'
 export default class work extends Component {
     render() {
         return (
-            <div id="work">
+            <section id="work">
                 <h1>Work Experience</h1>
                 <Container fluid>
                     <Row id="work-experience" className="row align-items-center">
@@ -102,7 +102,7 @@ export default class work extends Component {
                         </Col>
                     </Row>
                 </Container>
-            </div>
+            </section>
         )
     }
 }

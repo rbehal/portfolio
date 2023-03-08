@@ -1,56 +1,133 @@
-import React, { Component } from 'react'
+import React, { useState, useEffect } from 'react';
 import '../App.css';
 
-import Image from 'react-bootstrap/Image'
-import img1 from '../assets/Sidebar/headshot.png'
+import Image from 'react-bootstrap/Image';
+import img1 from '../assets/Sidebar/headshot.png';
 
-// import ScrollspyNav from "react-scrollspy-nav";
+export default function Sidebar() {
+    const [activeLink, setActiveLink] = useState("home");
 
+    useEffect(() => {
+        const handleScroll = () => {
+            const sections = document.querySelectorAll('section[id]');
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-export default class sidebar extends Component {
-    render() {
-        return (
+            const homeHeight = document.querySelector('#home').offsetHeight;
+            const windowHeight = window.innerHeight;
+            const documentHeight = document.documentElement.scrollHeight;
 
-            <div className="sidebar">
-                <ul>
-                    <li> 
-                        <Image className="headshot" src={img1} roundedCircle /> 
-                    </li>
-                    
+            if (scrollTop + windowHeight === documentHeight) {
+                setActiveLink('contact');
+            } else {          
+                for (let i = 0; i < sections.length; i++) {
+                    const section = sections[i];
+                    const sectionTop = section.getAttribute('id') === 'home' ? section.offsetTop : section.offsetTop + homeHeight;
+                    const sectionBottom = sectionTop + section.offsetHeight;
+
+                    if (scrollTop >= sectionTop && scrollTop < sectionBottom) {
+                        const activeLink = section.getAttribute('id');
+                        setActiveLink(activeLink);
+                        break;
+                    }
+                }
+            }
+          };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
+    return (
+        <div className="sidebar">
+            <ul>
+                <li>
+                    <Image className="headshot" src={img1} roundedCircle />
+                </li>
+
+                <li>
+                    <h1 className="sidebar-name">Rahul Behal</h1>
+                </li>
+
+                <li>
+                    <p>
+                        <i className="fas fa-envelope"></i>&nbsp;RahulBehal01@hotmail.com
+                    </p>
+                </li>
+
+                <div className="quick-links">
+                    <ul>
+                        <li>
+                            <a
+                                className={activeLink === 'home' ? 'active' : ''}
+                                href="#home"
+                            >
+                                Introduction
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                className={activeLink === 'about' ? 'active' : ''}
+                                href="#about"
+                            >
+                                About Me
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                className={activeLink === 'skills' ? 'active' : ''}
+                                href="#skills"
+                            >
+                                Skills
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                className={activeLink === 'projects' ? 'active' : ''}
+                                href="#projects"
+                            >
+                                Projects
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                className={activeLink === 'work' ? 'active' : ''}
+                                href="#work"
+                            >
+                                Work Experience
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                className={activeLink === 'contact' ? 'active' : ''}
+                                href="#contact"
+                            >
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div className="icons">
                     <li>
-                        <h1 className="sidebar-name">Rahul Behal</h1>
+                        <a
+                            href="https://www.linkedin.com/in/rbehal01/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <i className="fab fa-linkedin fa-2x"></i>
+                        </a>
                     </li>
-
                     <li>
-                        <p><i className="fas fa-envelope"></i>&nbsp;RahulBehal01@hotmail.com</p>
+                        <a
+                            href="https://github.com/rbehal/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <i className="fab fa-github fa-2x"></i>
+                        </a>
                     </li>
-
-                    {/* <ScrollspyNav
-                        scrollTargetIds={["home", "about", "skills", "projects", "work", "contact"]}
-                        offset={0}
-                        activeNavClass="is-active"
-                        scrollDuration="1000"
-                        headerBackground="true"
-                    > */}
-                        <div className="quick-links">
-                            <ul>
-                            <li><a href="#home">Introduction</a></li>
-                            <li><a href="#about">About Me</a></li>
-                            <li><a href="#skills">Skills</a> </li>
-                            <li><a href="#projects">Projects</a></li>
-                            <li><a href="#work">Work Experience</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                            </ul>
-                        </div>
-                    {/* </ScrollspyNav> */}
-            
-
-                    <div className="icons"> 
-                        <li><a href="https://www.linkedin.com/in/rbehal01/" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin fa-2x"></i></a></li>
-                        <li><a href="https://github.com/rbehal/" target="_blank" rel="noopener noreferrer"><i className="fab fa-github fa-2x"></i></a></li>
-                    </div>
-                </ul>
-            </div>
-        )
-    }
+                </div>
+            </ul>
+        </div>
+    );
 }

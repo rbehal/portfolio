@@ -14,7 +14,7 @@ import img3 from '../assets/Home/AgnicoEagle.jpg'
 export default class home extends Component {
     render() {
         return (
-            <div id="home">
+            <section id="home">
                 <Carousel controls={false} touch={false}>
                     <Carousel.Item>
                         <Image className="slide" src={img1} fluid />
@@ -57,7 +57,7 @@ export default class home extends Component {
                         </Carousel.Caption>
                     </Carousel.Item>
                 </Carousel>
-            </div>
+            </section>
         )
     }
 }

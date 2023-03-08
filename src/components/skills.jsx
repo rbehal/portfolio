@@ -78,7 +78,7 @@ export default class skills extends Component {
 
     render() {
         return (
-            <div id="skills">
+            <section id="skills">
                 <h1>Skills</h1>
                 <table className="skills">
                     <tbody>
@@ -96,7 +96,7 @@ export default class skills extends Component {
                         {this.renderTableData(this.state.financeSkills)}
                     </tbody>
                 </table>
-            </div>
+            </section>
         )
     }
 }
