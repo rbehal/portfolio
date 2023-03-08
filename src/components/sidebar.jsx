@@ -37,6 +37,18 @@ export default function Sidebar() {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
+    const handleClick = (e, id) => {
+        e.preventDefault();
+
+        const section = document.querySelector(`#${id}`);
+        const homeHeight = (id == "home") ? 0 : document.querySelector('#home').offsetHeight;
+        window.scrollTo({
+            top: section.offsetTop + homeHeight,
+            behavior: 'smooth'
+        });
+        setTimeout(() => setActiveLink(id), 400);
+    };    
+
     return (
         <div className="sidebar">
             <ul>
@@ -60,6 +72,7 @@ export default function Sidebar() {
                             <a
                                 className={activeLink === 'home' ? 'active' : ''}
                                 href="#home"
+                                onClick={(e) => handleClick(e, 'home')}
                             >
                                 Introduction
                             </a>
@@ -68,6 +81,7 @@ export default function Sidebar() {
                             <a
                                 className={activeLink === 'about' ? 'active' : ''}
                                 href="#about"
+                                onClick={(e) => handleClick(e, 'about')}
                             >
                                 About Me
                             </a>
@@ -76,6 +90,7 @@ export default function Sidebar() {
                             <a
                                 className={activeLink === 'skills' ? 'active' : ''}
                                 href="#skills"
+                                onClick={(e) => handleClick(e, 'skills')}
                             >
                                 Skills
                             </a>
@@ -84,6 +99,7 @@ export default function Sidebar() {
                             <a
                                 className={activeLink === 'projects' ? 'active' : ''}
                                 href="#projects"
+                                onClick={(e) => handleClick(e, 'projects')}
                             >
                                 Projects
                             </a>
@@ -92,6 +108,7 @@ export default function Sidebar() {
                             <a
                                 className={activeLink === 'work' ? 'active' : ''}
                                 href="#work"
+                                onClick={(e) => handleClick(e, 'work')}
                             >
                                 Work Experience
                             </a>
@@ -100,6 +117,7 @@ export default function Sidebar() {
                             <a
                                 className={activeLink === 'contact' ? 'active' : ''}
                                 href="#contact"
+                                onClick={(e) => handleClick(e, 'contact')}
                             >
                                 Contact
                             </a>
