@@ -11,8 +11,8 @@ export default class skills extends Component {
                 { id: 1, skill1: "Java", numStars1: 5, skill2: "Python", numStars2: 5 },
                 { id: 2, skill1: "Javascript", numStars1: 5, skill2: "HTML/CSS/Bootstrap", numStars2: 5 },
                 { id: 3, skill1: "React.JS", numStars1: 4, skill2: "Vue.JS", numStars2: 5 },
-                { id: 4, skill1: "Build Systems: Gradle", numStars1: 4, skill2: "Agile Methodology", numStars2: 5 },
-                { id: 5, skill1: "Continuous Integration: Travis CI", numStars1: 5, skill2: "Version Control: Git", numStars2: 5 },
+                { id: 4, skill1: "Build Systems: Maven/Gradle", numStars1: 4, skill2: "Agile Methodology", numStars2: 5 },
+                { id: 5, skill1: "CI/CD: Jenkins, Travis CI", numStars1: 5, skill2: "Version Control: Git", numStars2: 5 },
                 { id: 6, skill1: "SQL", numStars1: 3, skill2: "Data Analysis & ML Models (Python, R)", numStars2: 5 },
                 { id: 7, skill1: "MATLAB", numStars1: 3, skill2: "VBA", numStars2: 4 },
             ],
@@ -49,14 +49,24 @@ export default class skills extends Component {
 
         return skills.map((skill) => {
             const { id, skill1, numStars1, skill2, numStars2 } = skill
+            const bulletPoint = <i className="fa fa-circle"></i>;
+
             return (
                 <tr key={id}>
-                    {isMobile && <td><i className="fa fa-circle d-xl-none"></i></td>}
-                    <td>{skill1}</td>
-                    <td className="d-none d-xl-block text-nowrap" style={{ paddingRight: "5vmin", fontSize: "1.5vmin" }}>{this.stars(numStars1)}</td>
-                    {isMobile && <td><i style={{ marginRight: "3vmin" }} className="fa fa-circle d-xl-none"></i></td>}
-                    <td style={{ paddingLeft: "5vmin" }}>{skill2}</td>
-                    <td className="d-none d-xl-block text-nowrap" style={{ fontSize: "1.5vmin" }}>{this.stars(numStars2)}</td>
+                    
+                    <td className="skill">
+                        {isMobile && bulletPoint}
+                        {skill1}
+                    </td>
+                    
+                    {!isMobile && <td className="d-none d-xl-block text-nowrap">{this.stars(numStars1)}</td>}
+                    
+                    <td className="skill">
+                        {isMobile && bulletPoint}
+                        {skill2}
+                    </td>
+                    
+                    {!isMobile && <td className="d-none d-xl-block text-nowrap">{this.stars(numStars2)}</td>}
                 </tr>
             )
         })
