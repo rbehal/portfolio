@@ -1,5 +1,7 @@
-import React, { Component } from 'react'
+import React, { useState, useEffect } from 'react'
 import '../App.css';
+
+import HomeMobile from './homeMobile'
 
 import Carousel from 'react-bootstrap/Carousel'
 import Image from 'react-bootstrap/Image'
@@ -9,10 +11,31 @@ import img1 from '../assets/Home/CQI3.jpg'
 import img2 from '../assets/Home/ConnUHacks.jpg'
 import img3 from '../assets/Home/AgnicoEagle.jpg'
 
+export default function Home() {
+    const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
+    useEffect(() => {
+      function handleResize() {
+        setScreenWidth(window.innerWidth);
+      }
+      window.addEventListener('resize', handleResize);
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      }
+    }, []);
 
-export default class home extends Component {
-    render() {
+    const handleClick = (e, id) => {
+        e.preventDefault();
+
+        const section = document.querySelector(`#${id}`);
+        const homeHeight = (id == "home") ? 0 : document.querySelector('#home').offsetHeight;
+        window.scrollTo({
+            top: section.offsetTop + homeHeight,
+            behavior: 'smooth'
+        });
+    };    
+
+    if (screenWidth > 600) {
         return (
             <section id="home">
                 <Carousel controls={false} touch={false}>
@@ -38,7 +61,7 @@ export default class home extends Component {
                                 Checkout what I've worked on!&nbsp;&nbsp;     
                             </h1>
 
-                            <Button className="view" variant="light" href="#projects">
+                            <Button className="view" onClick={(e) => handleClick(e, 'projects')} variant="light" href="#projects">
                                 View Projects&nbsp;&nbsp;
                                 <i className="fas fa-database"></i>
                             </Button>
@@ -50,7 +73,7 @@ export default class home extends Component {
 
                         <Carousel.Caption className="d-none d-sm-block">
                             <h1 className="intro">I'm always seeking exciting opportunities!&nbsp;&nbsp;</h1>
-                            <Button className="view" variant="light" href="#work">
+                            <Button className="view" onClick={(e) => handleClick(e, 'work')} variant="light" href="#work">
                                 View Work Experience&nbsp;&nbsp;
                                 <i className="fas fa-briefcase"></i>
                             </Button>
@@ -59,5 +82,11 @@ export default class home extends Component {
                 </Carousel>
             </section>
         )
-    }
+    } else {
+        return (
+            <section id="home">
+                <HomeMobile />
+            </section>
+        )
+    }   
 }

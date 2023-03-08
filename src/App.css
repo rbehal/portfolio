@@ -1,3 +1,5 @@
+/* Home */
+
 img.slide {
   width: 100%;
   height: auto;
@@ -38,6 +40,19 @@ img.slide {
   font-family: "Libre Baskerville";
 }
 
+.home-mobile-display {
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  transform: translate(-15%, -15%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
 .intro {
   font-size: 4vmin;
   margin: auto;
@@ -51,6 +66,8 @@ img.slide {
   top: 20px;
   color: black;
 }
+
+/* Sidebar */
 
 .sidebar {
   height: 100vh;
@@ -74,6 +91,8 @@ img.slide {
 
 .sidebar ul li p {
   margin-top: 1vmin;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .sidebar ul li a {
@@ -113,9 +132,7 @@ img.slide {
   font-family: 'Libre Baskerville';
 }
 
-.sidebar.quick-links li.active a {
-  color: #2c98f0;
-}
+/* Main page general styling */
 
 .general {
   text-align: center; 
@@ -144,9 +161,13 @@ img.slide {
   margin-top: 10vmin;
 }
 
+/* About */
+
 #about-header {
   margin-top: 5%;
 }
+
+/* Skills */
 
 .skills {
   width: 100%;
@@ -164,6 +185,8 @@ img.slide {
 #personal-skills {
   margin-top: 0%;
 }
+
+/* Projects */
 
 .projects {
   color: black;
@@ -202,6 +225,8 @@ img.slide {
   margin-left: 5%;
   margin-right: 5%;
 }
+
+/* Work Experience */
 
 #work {
   margin: auto;
@@ -243,6 +268,8 @@ img.slide {
   text-align: justify;
 }
 
+/* Contact Form */
+
 #message-box {
   height: 15vmin;
   margin: auto;
@@ -283,7 +310,8 @@ img.slide {
 .fa-circle {
   font-size: 10px;
 }
-/* 992px is what dragging to the side of my monitor is */
+
+/* Media Queries */
 @media screen and (max-width: 992px) {
   .sidebar {
       display: none !important;
