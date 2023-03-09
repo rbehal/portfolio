@@ -46,7 +46,7 @@ function App() {
               <About />
               <Skills screenWidth={screenWidth} />
               <Projects />
-              <Work />
+              <Work screenWidth={screenWidth} />
               <Contact />
             </Col>
           </Row>

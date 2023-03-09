@@ -156,6 +156,11 @@ img.slide {
     font-size: 3vmin;
   }
 }
+@media (max-width: 480px) {
+  .general p {
+    font-size: 4vmin;
+  }
+}
 
 .general h1 {
   font-family: 'Libre Baskerville';
@@ -169,12 +174,12 @@ img.slide {
   .general h1 {
     margin-bottom: 8vmin;
     margin-top: 8vmin;
+    font-size: 6vmin;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .general h1 {
-    margin-bottom: 6vmin;
-    margin-top: 6vmin;
+    font-size: 7vmin;
   }
 }
 
@@ -194,11 +199,24 @@ img.slide {
 .skill {
   overflow: hidden;
   text-overflow: ellipsis;
+  /* Should have same font-size as general p */
+  font-size: 2vmin; 
+}
+@media (max-width: 768px) {
+  .skill {
+    font-size: 3vmin;
+  }
+}
+@media (max-width: 480px) {
+  .skill {
+    font-size: 4vmin;
+  }
 }
 
 .skills-heading {
   display: block;
   font-weight: bold;
+  font-size: 4vmin;
   margin-top: 10%;
   margin-bottom: 10%;
   white-space: nowrap;
@@ -219,7 +237,6 @@ img.slide {
   font-size: 1.75vmin;
   text-align: center;
 }
-
 .projects h2 {
   color: black;
   font-weight: bold;
@@ -227,6 +244,22 @@ img.slide {
   text-shadow: 0;
   padding: 0;
   border: 0;
+}
+@media (max-width: 768px) {
+  .projects p {
+    font-size: 1.75vmin;
+  }
+  .projects h2 {
+    font-size: 2.2vmin;
+  }
+}
+@media (max-width: 480px) {
+  .projects p {
+    font-size: 3vmin;
+  }
+  .projects h2 {
+    font-size: 4vmin;
+  }
 }
 
 #view-link {
@@ -236,6 +269,16 @@ img.slide {
   margin-bottom: 0%;
   margin-top: 0%;
   padding: 0px; 
+}
+/* @media (max-width: 768px) {
+  #view-link {
+    font-size: 4vmin;
+  }
+} */
+@media (max-width: 480px) {
+  #view-link {
+    font-size: 4vmin;
+  }
 }
 
 .preview {
@@ -276,9 +319,19 @@ img.slide {
   margin-top: 1vmin;
   margin-bottom: 1vmin;
 }
+@media (max-width: 768px) {
+  #work-title {
+    font-size: 5.5vmin;
+  }
+}
 
 .work-heading {
   font-size: 2.2vmin;
+}
+@media (max-width: 768px) {
+  .work-heading {
+    font-size: 4vmin;
+  }
 }
 
 #work-description {
@@ -293,6 +346,12 @@ img.slide {
   margin: auto;
   margin-top: 1%;
 }
+@media (max-width: 480px) {
+  #message-box {
+    height: 30vmin;
+  }
+}
+
 
 #email-box {
   margin: auto;
@@ -312,17 +371,18 @@ img.slide {
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   transition: .5s ease all;
 }
-
 .submit-text {
   margin: auto;
   margin-top:3%;
   margin-bottom: 10%;
-  font-weight: bold;
 }
-
-.is-active {
-  font-weight: bold;
-  text-decoration: underline;
+@media (max-width: 480px) {
+  #message-box {
+    height: 40vmin;
+  }
+  .submit-text {
+    font-size: 4vmin;
+  }
 }
 
 .fa-circle {
