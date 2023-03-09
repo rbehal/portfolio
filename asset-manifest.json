@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.c0a49cff.chunk.css",
-    "main.js": "/static/js/main.907b5b4f.chunk.js",
-    "main.js.map": "/static/js/main.907b5b4f.chunk.js.map",
+    "main.css": "/static/css/main.8496fea3.chunk.css",
+    "main.js": "/static/js/main.d26f6211.chunk.js",
+    "main.js.map": "/static/js/main.d26f6211.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.e5fc83a6.js",
     "runtime-main.js.map": "/static/js/runtime-main.e5fc83a6.js.map",
-    "static/js/2.4e0a5b18.chunk.js": "/static/js/2.4e0a5b18.chunk.js",
-    "static/js/2.4e0a5b18.chunk.js.map": "/static/js/2.4e0a5b18.chunk.js.map",
+    "static/js/2.f979e1c3.chunk.js": "/static/js/2.f979e1c3.chunk.js",
+    "static/js/2.f979e1c3.chunk.js.map": "/static/js/2.f979e1c3.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.b46f12186a5e9380370c49fd0431c9aa.js": "/precache-manifest.b46f12186a5e9380370c49fd0431c9aa.js",
+    "precache-manifest.39e54b751830ef30aba6f85c71295288.js": "/precache-manifest.39e54b751830ef30aba6f85c71295288.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.c0a49cff.chunk.css.map": "/static/css/main.c0a49cff.chunk.css.map",
-    "static/js/2.4e0a5b18.chunk.js.LICENSE.txt": "/static/js/2.4e0a5b18.chunk.js.LICENSE.txt",
+    "static/css/main.8496fea3.chunk.css.map": "/static/css/main.8496fea3.chunk.css.map",
+    "static/js/2.f979e1c3.chunk.js.LICENSE.txt": "/static/js/2.f979e1c3.chunk.js.LICENSE.txt",
     "static/media/Agnico.png": "/static/media/Agnico.a85342fa.png",
     "static/media/AgnicoEagle.jpg": "/static/media/AgnicoEagle.0d9df79e.jpg",
     "static/media/Amazon.png": "/static/media/Amazon.b38e3c49.png",
@@ -21,14 +21,15 @@
     "static/media/amazingBrick.gif": "/static/media/amazingBrick.529c6187.gif",
     "static/media/headshot.png": "/static/media/headshot.5ce3c295.png",
     "static/media/jobSearch.gif": "/static/media/jobSearch.ca2172ca.gif",
+    "static/media/mobile.jpg": "/static/media/mobile.ac6253b9.jpg",
     "static/media/optionsStrategies.gif": "/static/media/optionsStrategies.451d7430.gif",
     "static/media/primeAID.gif": "/static/media/primeAID.65e79d2e.gif",
     "static/media/tickerPicker.gif": "/static/media/tickerPicker.78207005.gif"
   },
   "entrypoints": [
     "static/js/runtime-main.e5fc83a6.js",
-    "static/js/2.4e0a5b18.chunk.js",
-    "static/css/main.c0a49cff.chunk.css",
-    "static/js/main.907b5b4f.chunk.js"
+    "static/js/2.f979e1c3.chunk.js",
+    "static/css/main.8496fea3.chunk.css",
+    "static/js/main.d26f6211.chunk.js"
   ]
 }
