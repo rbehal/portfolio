@@ -41,7 +41,7 @@ export default function Sidebar() {
         e.preventDefault();
 
         const section = document.querySelector(`#${id}`);
-        const homeHeight = (id == "home") ? 0 : document.querySelector('#home').offsetHeight;
+        const homeHeight = (id === "home") ? 0 : document.querySelector('#home').offsetHeight;
         window.scrollTo({
             top: section.offsetTop + homeHeight,
             behavior: 'smooth'

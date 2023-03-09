@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.css';
 import Home from './components/home'
 import Sidebar from './components/sidebar'
@@ -17,12 +17,24 @@ ReactGA.initialize('UA-173611398-1');
 ReactGA.pageview(window.location.pathname + window.location.search);
 
 function App() {
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    function handleResize() {
+      setScreenWidth(window.innerWidth);
+    }
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    }
+  }, []);
+
   return (
     <React.Fragment>
       <Container fluid>
         <Row>
           <Col className="col-md-12 col-lg-10 px-0 align-items-start">
-            <Home />
+            <Home screenWidth={screenWidth} />
           </Col>
           <Col className="col-2 offset-10 px-0 position-fixed">
             <Sidebar />
@@ -32,7 +44,7 @@ function App() {
           <Row>
             <Col className="col-md-12 col-lg-10 main">
               <About />
-              <Skills />
+              <Skills screenWidth={screenWidth} />
               <Projects />
               <Work />
               <Contact />

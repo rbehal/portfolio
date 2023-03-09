@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import '../App.css';
 
 import HomeMobile from './homeMobile'
@@ -13,24 +13,14 @@ import img3 from '../assets/Home/AgnicoEagle.jpg'
 
 import { LAPTOP_SIZE } from '../constants/screenSizes';
 
-export default function Home() {
-    const [screenWidth, setScreenWidth] = useState(window.innerWidth);
-
-    useEffect(() => {
-      function handleResize() {
-        setScreenWidth(window.innerWidth);
-      }
-      window.addEventListener('resize', handleResize);
-      return () => {
-        window.removeEventListener('resize', handleResize);
-      }
-    }, []);
+export default function Home(props) {
+    const { screenWidth } = props;
 
     const handleClick = (e, id) => {
         e.preventDefault();
 
         const section = document.querySelector(`#${id}`);
-        const homeHeight = (id == "home") ? 0 : document.querySelector('#home').offsetHeight;
+        const homeHeight = (id === "home") ? 0 : document.querySelector('#home').offsetHeight;
         window.scrollTo({
             top: section.offsetTop + homeHeight,
             behavior: 'smooth'

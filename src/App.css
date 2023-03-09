@@ -151,6 +151,11 @@ img.slide {
   text-align: justify; 
   font-family: "Source Sans Pro";
 }
+@media (max-width: 768px) {
+  .general p {
+    font-size: 3vmin;
+  }
+}
 
 .general h1 {
   font-family: 'Libre Baskerville';
@@ -159,6 +164,18 @@ img.slide {
   color: #E9E9E9;
   margin-bottom: 10vmin;
   margin-top: 10vmin;
+}
+@media (max-width: 1200px) {
+  .general h1 {
+    margin-bottom: 8vmin;
+    margin-top: 8vmin;
+  }
+}
+@media (max-width: 768px) {
+  .general h1 {
+    margin-bottom: 6vmin;
+    margin-top: 6vmin;
+  }
 }
 
 /* About */
@@ -260,11 +277,7 @@ img.slide {
   margin-bottom: 1vmin;
 }
 
-.work-position {
-  font-size: 2.2vmin;
-}
-
-.work-subheading {
+.work-heading {
   font-size: 2.2vmin;
 }
 
