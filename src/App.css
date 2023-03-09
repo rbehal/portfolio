@@ -318,7 +318,7 @@ img.slide {
 } 
 
 /* Media Queries */
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) { /* 991 is home img width */
   .sidebar {
       display: none !important;
   }

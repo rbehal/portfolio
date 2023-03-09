@@ -11,6 +11,8 @@ import img1 from '../assets/Home/CQI3.jpg'
 import img2 from '../assets/Home/ConnUHacks.jpg'
 import img3 from '../assets/Home/AgnicoEagle.jpg'
 
+import { LAPTOP_SIZE } from '../constants/screenSizes';
+
 export default function Home() {
     const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
@@ -35,7 +37,7 @@ export default function Home() {
         });
     };    
 
-    if (screenWidth > 600) {
+    if (screenWidth >= LAPTOP_SIZE) {
         return (
             <section id="home">
                 <Carousel controls={false} touch={false}>

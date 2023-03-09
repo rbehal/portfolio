@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import '../App.css';
+import { LARGE_DESKTOP_SIZE } from '../constants/screenSizes';
 
 
 
@@ -29,7 +30,7 @@ export default class skills extends Component {
                 { id: 3, skill1: "Critical Thinking", numStars1: 5, skill2: "Leadership", numStars2: 5 },
                 { id: 4, skill1: "French", numStars1: 3, skill2: "Spanish", numStars2: 2 },
             ],
-            isMobile: false
+            isSmallScreen: false
         }
         this.update = this.update.bind(this);
     }
@@ -41,11 +42,11 @@ export default class skills extends Component {
         window.removeEventListener("resize", this.update)
     }
     update() {
-        this.setState({ isMobile: window.innerWidth < 1200 })
+        this.setState({ isSmallScreen: window.innerWidth < LARGE_DESKTOP_SIZE })
     }
 
     renderTableData(skills) {
-        const isMobile = this.state.isMobile;
+        const isSmallScreen = this.state.isSmallScreen;
 
         return skills.map((skill) => {
             const { id, skill1, numStars1, skill2, numStars2 } = skill
@@ -55,18 +56,18 @@ export default class skills extends Component {
                 <tr key={id}>
                     
                     <td className="skill">
-                        {isMobile && bulletPoint}
+                        {isSmallScreen && bulletPoint}
                         {skill1}
                     </td>
                     
-                    {!isMobile && <td className="d-none d-xl-block text-nowrap">{this.stars(numStars1)}</td>}
+                    {!isSmallScreen && <td className="d-none d-xl-block text-nowrap">{this.stars(numStars1)}</td>}
                     
                     <td className="skill">
-                        {isMobile && bulletPoint}
+                        {isSmallScreen && bulletPoint}
                         {skill2}
                     </td>
                     
-                    {!isMobile && <td className="d-none d-xl-block text-nowrap">{this.stars(numStars2)}</td>}
+                    {!isSmallScreen && <td className="d-none d-xl-block text-nowrap">{this.stars(numStars2)}</td>}
                 </tr>
             )
         })
