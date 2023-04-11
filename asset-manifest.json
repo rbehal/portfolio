@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.8496fea3.chunk.css",
-    "main.js": "/static/js/main.d26f6211.chunk.js",
-    "main.js.map": "/static/js/main.d26f6211.chunk.js.map",
+    "main.js": "/static/js/main.4aab8e9c.chunk.js",
+    "main.js.map": "/static/js/main.4aab8e9c.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.e5fc83a6.js",
     "runtime-main.js.map": "/static/js/runtime-main.e5fc83a6.js.map",
-    "static/js/2.f979e1c3.chunk.js": "/static/js/2.f979e1c3.chunk.js",
-    "static/js/2.f979e1c3.chunk.js.map": "/static/js/2.f979e1c3.chunk.js.map",
+    "static/js/2.1ea24625.chunk.js": "/static/js/2.1ea24625.chunk.js",
+    "static/js/2.1ea24625.chunk.js.map": "/static/js/2.1ea24625.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.39e54b751830ef30aba6f85c71295288.js": "/precache-manifest.39e54b751830ef30aba6f85c71295288.js",
+    "precache-manifest.dd3e363e31c2b23e6e7eeda443996a83.js": "/precache-manifest.dd3e363e31c2b23e6e7eeda443996a83.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.8496fea3.chunk.css.map": "/static/css/main.8496fea3.chunk.css.map",
-    "static/js/2.f979e1c3.chunk.js.LICENSE.txt": "/static/js/2.f979e1c3.chunk.js.LICENSE.txt",
+    "static/js/2.1ea24625.chunk.js.LICENSE.txt": "/static/js/2.1ea24625.chunk.js.LICENSE.txt",
     "static/media/Agnico.png": "/static/media/Agnico.a85342fa.png",
     "static/media/AgnicoEagle.jpg": "/static/media/AgnicoEagle.0d9df79e.jpg",
     "static/media/Amazon.png": "/static/media/Amazon.b38e3c49.png",
@@ -19,6 +19,7 @@
     "static/media/ConnUHacks.jpg": "/static/media/ConnUHacks.2dc8e5f7.jpg",
     "static/media/Scotiabank.png": "/static/media/Scotiabank.19d36db6.png",
     "static/media/amazingBrick.gif": "/static/media/amazingBrick.529c6187.gif",
+    "static/media/awn.png": "/static/media/awn.4052937e.png",
     "static/media/headshot.png": "/static/media/headshot.5ce3c295.png",
     "static/media/jobSearch.gif": "/static/media/jobSearch.ca2172ca.gif",
     "static/media/mobile.jpg": "/static/media/mobile.ac6253b9.jpg",
@@ -28,8 +29,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.e5fc83a6.js",
-    "static/js/2.f979e1c3.chunk.js",
+    "static/js/2.1ea24625.chunk.js",
     "static/css/main.8496fea3.chunk.css",
-    "static/js/main.d26f6211.chunk.js"
+    "static/js/main.4aab8e9c.chunk.js"
   ]
 }
