@@ -9,7 +9,7 @@ import agenthubLogo from "../assets/Work/AgentHub.png";
 const agenthub = {
   company: "AgentHub",
   position: "Co-Founder",
-  location: "Vancouver, British Columbia",
+  location: "San Francisco, California",
   date: "Jun. 2023 - Present",
   description:
     "Currently building AgentHub, a no-code platform for building AI-powered pipelines to automate business workflows. Start building at: https://agenthub.dev/.",
