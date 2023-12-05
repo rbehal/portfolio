@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.90bf6a75.css",
-    "main.js": "/static/js/main.6994c505.js",
+    "main.js": "/static/js/main.f2fdbd98.js",
     "static/media/tickerPicker.gif": "/static/media/tickerPicker.003549a6729310426371.gif",
     "static/media/primeAID.gif": "/static/media/primeAID.3c303934b547eeb20744.gif",
     "static/media/optionsStrategies.gif": "/static/media/optionsStrategies.bc07bbb5b07f5a4bfc17.gif",
@@ -19,10 +19,10 @@
     "static/media/AgentHub.png": "/static/media/AgentHub.0e82644d74a06aac25cc.png",
     "index.html": "/index.html",
     "main.90bf6a75.css.map": "/static/css/main.90bf6a75.css.map",
-    "main.6994c505.js.map": "/static/js/main.6994c505.js.map"
+    "main.f2fdbd98.js.map": "/static/js/main.f2fdbd98.js.map"
   },
   "entrypoints": [
     "static/css/main.90bf6a75.css",
-    "static/js/main.6994c505.js"
+    "static/js/main.f2fdbd98.js"
   ]
 }
